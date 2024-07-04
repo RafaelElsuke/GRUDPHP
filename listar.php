@@ -18,9 +18,7 @@ include_once('conexao.php');
         unset($_SESSION['msg']);
     }
    
-   
-   
-   
+    
     // Receber o número da página
     $pagina_atual = filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
     $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
